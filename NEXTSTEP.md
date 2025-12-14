@@ -24,7 +24,9 @@ This project is a **Wedding Gallery SPA (Single Page Application)** built with r
 ```
 
 ## Completed Tasks
-- **Animated "Golden Glitter" Title**: Implemented a pure CSS shimmering gold gradient on the main title ("Nallely & Gil"). Updated `style.css` to include `@keyframes shine` and adjusted the hero overlay opacity to `0.7` for better contrast.
+- **Animated "Golden Glitter" Title**: Implemented a pure CSS shimmering gold gradient on the main title ("Nallely & Gil").
+- **Configurable Assets**: Added PHP variables `$heroImage` and `$bgMusic` to `index.php` for easy updating of the main photo and background music.
+- **Content Reset**: Cleared all uploaded photos/videos and reset `gallery.json`.
 
 ## Next Task: Image Lazy Loading & Optimization
 The gallery grid loads all images at once. As the gallery grows, this will impact performance.
