@@ -25,12 +25,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Music
     const musicToggleBtn = document.getElementById('musicToggleBtn');
+    const nextMusicBtn = document.getElementById('nextMusicBtn');
     const bgMusic = document.getElementById('bgMusic');
     const musicStatus = document.getElementById('musicStatus');
     let isMusicPlaying = false;
+    let playlist = [];
+    let currentSongIndex = 0;
 
     // --- Initialization ---
     fetchGallery();
+    fetchPlaylist();
 
     // --- Event Listeners ---
 
@@ -97,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Music Control
     musicToggleBtn.addEventListener('click', toggleMusic);
+    nextMusicBtn.addEventListener('click', playNextSong);
+    bgMusic.addEventListener('ended', playNextSong);
 
     // Lightbox Controls
     closeLightboxBtn.addEventListener('click', closeLightbox);
@@ -125,20 +131,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function toggleMusic() {
+        if (playlist.length === 0) return;
+
         if (isMusicPlaying) {
             bgMusic.pause();
             musicToggleBtn.textContent = 'Play';
             musicStatus.textContent = 'Music Paused';
+            isMusicPlaying = false;
         } else {
-            bgMusic.play().then(() => {
-                musicToggleBtn.textContent = 'Pause';
-                musicStatus.textContent = 'Playing...';
-            }).catch(e => {
-                console.log("Autoplay prevented or error", e);
-                musicStatus.textContent = 'Click to Play';
-            });
+            // Ensure src is set if it's empty (first play)
+            if (!bgMusic.src && playlist.length > 0) {
+                 bgMusic.src = playlist[currentSongIndex];
+            }
+            playAudio();
         }
-        isMusicPlaying = !isMusicPlaying;
+    }
+
+    function playAudio() {
+        bgMusic.play().then(() => {
+            musicToggleBtn.textContent = 'Pause';
+            musicStatus.textContent = 'Playing...';
+            isMusicPlaying = true;
+        }).catch(e => {
+            console.log("Autoplay prevented or error", e);
+            musicStatus.textContent = 'Click to Play';
+            isMusicPlaying = false;
+        });
+    }
+
+    function playNextSong() {
+        if (playlist.length === 0) return;
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        bgMusic.src = playlist[currentSongIndex];
+        playAudio();
+    }
+
+    function fetchPlaylist() {
+        fetch('data/playlist.json')
+            .then(response => response.json())
+            .then(data => {
+                if (Array.isArray(data) && data.length > 0) {
+                    playlist = data;
+                    currentSongIndex = 0;
+                    // Preload the first song but don't play yet
+                    bgMusic.src = playlist[0];
+                } else {
+                    console.log("Playlist is empty or invalid");
+                }
+            })
+            .catch(error => console.error("Error loading playlist:", error));
     }
 
     function uploadData(files) {

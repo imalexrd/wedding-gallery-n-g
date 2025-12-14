@@ -34,8 +34,8 @@ $bgMusic = 'assets/music.mp3'; // Música de Fondo
                 <span class="icon">🎵</span>
                 <span id="musicStatus">Music Paused</span>
                 <button id="musicToggleBtn" class="btn btn-small">Play</button>
-                <audio id="bgMusic" loop>
-                    <source src="<?php echo $bgMusic; ?>" type="audio/mpeg">
+                <button id="nextMusicBtn" class="btn btn-small" title="Siguiente Canción">⏭</button>
+                <audio id="bgMusic">
                     Tu navegador no soporta el elemento de audio.
                 </audio>
             </div>
