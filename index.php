@@ -1,3 +1,8 @@
+<?php
+// Configuración Principal
+$heroImage = 'https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'; // Foto Principal
+$bgMusic = 'assets/music.mp3'; // Música de Fondo
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +15,7 @@
 </head>
 <body>
 
-    <header class="hero">
+    <header class="hero" style="background-image: url('<?php echo $heroImage; ?>');">
         <div class="overlay"></div>
         <div class="hero-content">
             <h1>Nallely & Gil</h1>
@@ -30,7 +35,7 @@
                 <span id="musicStatus">Music Paused</span>
                 <button id="musicToggleBtn" class="btn btn-small">Play</button>
                 <audio id="bgMusic" loop>
-                    <source src="assets/music.mp3" type="audio/mpeg">
+                    <source src="<?php echo $bgMusic; ?>" type="audio/mpeg">
                     Tu navegador no soporta el elemento de audio.
                 </audio>
             </div>
