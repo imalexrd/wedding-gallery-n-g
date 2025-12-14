@@ -1,31 +1,85 @@
-[Sun Dec 14 21:57:58 2025] PHP 8.3.6 Development Server (http://0.0.0.0:8000) started
-[Sun Dec 14 21:58:08 2025] 127.0.0.1:53284 Accepted
-[Sun Dec 14 21:58:08 2025] 127.0.0.1:53284 [200]: GET /data/playlist.json
-[Sun Dec 14 21:58:08 2025] 127.0.0.1:53284 Closing
-[Sun Dec 14 21:58:18 2025] 127.0.0.1:50166 Accepted
-[Sun Dec 14 21:58:18 2025] 127.0.0.1:50166 [200]: GET /assets/music.mp3
-[Sun Dec 14 21:58:18 2025] 127.0.0.1:50166 Closing
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34262 Accepted
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34262 [200]: GET /
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34262 Closing
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34278 Accepted
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34282 Accepted
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34278 [200]: GET /style.css
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34282 [200]: GET /script.js
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34278 Closing
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34282 Closing
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34298 Accepted
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34298 [200]: GET /api/get_gallery.php
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34298 Closing
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34314 Accepted
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34314 [200]: GET /data/playlist.json
-[Sun Dec 14 21:59:26 2025] 127.0.0.1:34314 Closing
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34320 Accepted
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34320 [200]: GET /assets/music.mp3
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34320 Closing
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34332 Accepted
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34332 [200]: GET /assets/song2.mp3
-[Sun Dec 14 21:59:27 2025] 127.0.0.1:34332 Closing
-[Sun Dec 14 21:59:28 2025] 127.0.0.1:34336 Accepted
-[Sun Dec 14 21:59:28 2025] 127.0.0.1:34336 [200]: GET /assets/song3.mp3
-[Sun Dec 14 21:59:28 2025] 127.0.0.1:34336 Closing
+[Sun Dec 14 22:18:03 2025] PHP 8.3.6 Development Server (http://0.0.0.0:8000) started
+[Sun Dec 14 22:18:15 2025] 127.0.0.1:59384 Accepted
+[Sun Dec 14 22:18:15 2025] 127.0.0.1:59384 [200]: HEAD /assets/music.mp3
+[Sun Dec 14 22:18:15 2025] 127.0.0.1:59384 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32916 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32916 [200]: GET /
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32916 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32918 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32920 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32918 [200]: GET /style.css
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32918 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32920 [200]: GET /script.js
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32920 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32930 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32936 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32930 [200]: GET /api/get_gallery.php
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32930 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32936 [200]: GET /data/playlist.json
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32936 Closing
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32952 Accepted
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32952 [200]: GET /assets/music.mp3
+[Sun Dec 14 22:18:34 2025] 127.0.0.1:32952 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53262 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53262 [200]: GET /
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53262 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53270 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53272 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53270 [200]: GET /style.css
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53272 [200]: GET /script.js
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53270 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53272 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53282 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53290 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53282 [200]: GET /api/get_gallery.php
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53282 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53290 [200]: GET /data/playlist.json
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53290 Closing
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53292 Accepted
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53292 [200]: GET /assets/music.mp3
+[Sun Dec 14 22:18:54 2025] 127.0.0.1:53292 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35474 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35474 [200]: GET /
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35474 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35490 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35504 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35490 [200]: GET /style.css
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35490 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35504 [200]: GET /script.js
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35504 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35520 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35534 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35520 [200]: GET /api/get_gallery.php
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35520 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35534 [200]: GET /data/playlist.json
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35534 Closing
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35550 Accepted
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35550 [200]: GET /assets/music.mp3
+[Sun Dec 14 22:21:18 2025] 127.0.0.1:35550 Closing
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36028 Accepted
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36028 [200]: GET /
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36028 Closing
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36040 Accepted
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36042 Accepted
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36040 [200]: GET /style.css
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36040 Closing
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36042 [200]: GET /script.js
+[Sun Dec 14 22:30:39 2025] 127.0.0.1:36042 Closing
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34018 Accepted
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34028 Accepted
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34018 [200]: GET /api/get_gallery.php
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34018 Closing
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34028 [200]: GET /data/playlist.json
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34028 Closing
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34036 Accepted
+[Sun Dec 14 22:30:40 2025] 127.0.0.1:34036 [200]: GET /assets/music.mp3
+[Sun Dec 14 22:30:41 2025] 127.0.0.1:34036 Closing
+[Sun Dec 14 22:30:41 2025] 127.0.0.1:34052 Accepted
+[Sun Dec 14 22:30:41 2025] 127.0.0.1:34052 [200]: GET /assets/song2.mp3
+[Sun Dec 14 22:30:41 2025] 127.0.0.1:34052 Closing
+[Sun Dec 14 22:30:42 2025] 127.0.0.1:34058 Accepted
+[Sun Dec 14 22:30:42 2025] 127.0.0.1:34058 [200]: GET /assets/song3.mp3
+[Sun Dec 14 22:30:42 2025] 127.0.0.1:34058 Closing
+[Sun Dec 14 22:30:43 2025] 127.0.0.1:34062 Accepted
+[Sun Dec 14 22:30:43 2025] 127.0.0.1:34062 [200]: GET /assets/music.mp3
+[Sun Dec 14 22:30:43 2025] 127.0.0.1:34062 Closing

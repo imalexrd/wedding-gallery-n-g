@@ -153,8 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
             musicStatus.textContent = 'Playing...';
             isMusicPlaying = true;
         }).catch(e => {
-            console.log("Autoplay prevented or error", e);
-            musicStatus.textContent = 'Click to Play';
+            console.error("Audio playback error:", e);
+            musicStatus.textContent = 'Playback Failed';
+            alert("No se pudo reproducir la música: " + e.message);
             isMusicPlaying = false;
         });
     }
