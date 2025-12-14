@@ -23,18 +23,13 @@ This project is a **Wedding Gallery SPA (Single Page Application)** built with r
 └── assets/              # (Optional) Static assets like background music or placeholder images
 ```
 
-## Next Task: Animated "Golden Glitter" Title
-The current Hero section displays the text "Nallely & Gil Wedding". The goal for the next iteration is to **significantly upgrade the visual impact of this text**.
+## Completed Tasks
+- **Animated "Golden Glitter" Title**: Implemented a pure CSS shimmering gold gradient on the main title ("Nallely & Gil"). Updated `style.css` to include `@keyframes shine` and adjusted the hero overlay opacity to `0.7` for better contrast.
+
+## Next Task: Image Lazy Loading & Optimization
+The gallery grid loads all images at once. As the gallery grows, this will impact performance.
 
 **Requirements:**
-1. **Visual Style**: The text should look elegant and "magical".
-2. **Effect**: Implement a **"Golden Glitter"** animation.
-   - This could be achieved via CSS `background-clip: text` with an animated gold texture.
-   - Or a subtle particle effect (canvas or CSS) around the text.
-   - It must feel premium and romantic, not cheap or distracting.
-3. **Responsiveness**: Ensure the effect works on mobile devices and remains readable.
-4. **Integration**: Modify `index.php` (if HTML structure changes needed) and `style.css`. Do not break the existing upload/gallery functionality.
-
-## Tips for Implementation
-- Look into CSS gradients with `@keyframes` moving background positions for a shimmering gold effect.
-- Ensure the contrast against the background image (defined in `.hero` class in `style.css`) remains high. The current implementation uses a dark overlay (`rgba(0,0,0,0.6)`), which should be preserved or adjusted carefully.
+1. **Lazy Loading**: Implement native `loading="lazy"` on image tags in `script.js`.
+2. **Thumbnail Generation**: (Optional but recommended) Update `api/upload.php` to generate smaller thumbnails for the grid view, serving full resolution only in the lightbox.
+3. **Pagination/Infinite Scroll**: If the list gets too long (e.g., > 50 items), implement "Load More" button or infinite scroll.
